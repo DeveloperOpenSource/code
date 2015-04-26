@@ -1,38 +1,37 @@
 package main.java.com.creationalPatterns.builderPattern.demo1;
 
 /**
- * Created by chetan.bharti on 25/04/15.
+ * Created by chetan.bharti on 26/04/15.
  * Concrete Builder class
  */
-public class LowPriceCarBuilder implements CarBuilder {
+public class HighEndCarBuilder implements CarBuilder {
 
     private Car car;
-    public LowPriceCarBuilder() {
+    public HighEndCarBuilder() {
         car = new Car();
     }
     public void buildBase() {
-        car.setBase("Low priced base");
+        car.setBase("High priced base");
     }
     public void buildWheels() {
-        car.setWheels("Cheap Tyres");
+        car.setWheels("Good Tyres");
     }
     public void buildEngine() {
-        car.setEngine("Low Quality Engine");
+        car.setEngine("High Quality Engine");
     }
     public void buildRoof() {
-        car.setRoof("No flexible roof");
+        car.setRoof("Good flexible roof");
     }
     public void buildMirrors() {
-        car.setMirrors("Cheap Mirrors");
+        car.setMirrors("Good Mirrors");
     }
     public void buildLights() {
-        car.setLights("Cheap Lights");
+        car.setLights("Quality Lights");
     }
     public void buildInterior() {
-        car.setInterior("Cheap Interior");
+        car.setInterior("Quality Interior");
     }
     public Car getCar() {
         return this.car;
     }
 }
-
